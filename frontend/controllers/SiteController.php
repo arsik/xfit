@@ -2,6 +2,7 @@
 namespace frontend\controllers;
 
 use app\models\City;
+use app\models\Clubs;
 use Yii;
 use common\models\LoginForm;
 use frontend\models\PasswordResetRequestForm;
@@ -145,7 +146,10 @@ class SiteController extends Controller
         if(Yii::$app->request->isPost) {
             $session = Yii::$app->session;
             $session['orderFirst'] = Yii::$app->request->post();
-            return $this->render('order');
+            $clubs = Clubs::find()->where(['cityID' => $session['orderFirst']['city']])->all();
+            return $this->render('order', [
+                'clubs' => $clubs
+            ]);
         }
         else
             return $this->redirect('index');

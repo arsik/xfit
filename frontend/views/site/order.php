@@ -23,12 +23,16 @@ $this->params['breadcrumbs'][] = $this->title;
             <div class="mdl-cell mdl-cell--8-col">
                 <h3>С заморозкой в клуб</h3>
                 <form id="nl-form" class="nl-form two">
-                    <select>
-                        <option value="1" selected>АК БАРС</option>
-                        <option value="2">Казани</option>
-                        <option value="3">Питера</option>
-                        <option value="4">Красноярска</option>
-                        <option value="5">Ульяновска</option>
+                    <select name="club">
+                        <?php
+                            $count = 1;
+                            foreach($clubs as $club)
+                            {
+                            if($count == 1) echo '<option value="'.$count.'" selected>'.$club->name.'</option>';
+                            else echo '<option value="'.$count.'">'.$club->name.'</option>';
+                            $count++;
+                            }
+                        ?>
                     </select>
                     <div class="nl-overlay"></div>
                 </form>
