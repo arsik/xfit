@@ -4,6 +4,7 @@
 
 $this->title = 'X-FIT';
 //hello22
+//2
 ?>
 <a name="top"></a>
 <div class="be-together-section mdl-typography--text-center">
