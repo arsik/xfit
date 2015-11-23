@@ -80,6 +80,8 @@
 	top: 50%;
 	font-size: 80%;
 	opacity: 0;
+	max-height: 200px;
+	overflow: auto;
 	-webkit-transform: translateY(-40%) scale(0.9);
 	-moz-transform: translateY(-40%) scale(0.9);
 	transform: translateY(-40%) scale(0.9);
