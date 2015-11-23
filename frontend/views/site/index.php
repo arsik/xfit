@@ -3,9 +3,6 @@
 /* @var $this yii\web\View */
 
 $this->title = 'X-FIT';
-//hello22
-//2
-//3
 ?>
 <a name="top"></a>
 <div class="be-together-section mdl-typography--text-center">
