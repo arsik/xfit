@@ -44,8 +44,8 @@ if($fullCost == null) $fullCost = 0;
       <a href="/clubs" class="list-group-item">Клубы (' . $clubs . ')</a>
       <a href="/cards" class="list-group-item">Карты (' . $cards . ')</a>
       <a href="/types" class="list-group-item">Типы карт (' . $types . ')</a>
-      <a href="/types" class="list-group-item">Время посещений (' . $viziting . ')</a>
-      <a href="/types" class="list-group-item">Сроки действия карт (' . $duration . ')</a>');
+      <a href="/viziting" class="list-group-item">Время посещений (' . $viziting . ')</a>
+      <a href="/duration" class="list-group-item">Сроки действия карт (' . $duration . ')</a>');
     }
     ?>
     <a href="/order" class="list-group-item">Заказы (<?=$orders?>)</a>

@@ -37,6 +37,24 @@ use yii\helpers\ArrayHelper;
 
     <?= $form->field($model, 'description')->textArea(['maxlength' => true]) ?>
 
+    <?php
+    $vizitings = \app\models\Viziting::find()->all();
+    $items = ArrayHelper::map($vizitings,'id','title');
+    $params = [
+        'prompt' => 'Выберите время'
+    ];
+    echo $form->field($model, 'vizitingID')->dropDownList($items,$params);
+    ?>
+
+    <?php
+    $durations = \app\models\Duration::find()->all();
+    $items = ArrayHelper::map($durations,'id','title');
+    $params = [
+        'prompt' => 'Выберите срок'
+    ];
+    echo $form->field($model, 'durationID')->dropDownList($items,$params);
+    ?>
+
     <div class="form-group">
         <?= Html::submitButton($model->isNewRecord ? 'Добавить' : 'Изменить', ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>
     </div>

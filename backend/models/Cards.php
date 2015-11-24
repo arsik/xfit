@@ -31,8 +31,8 @@ class Cards extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['cardTypeID', 'clubID', 'cost', 'header', 'description'], 'required'],
-            [['cardTypeID', 'clubID', 'cost'], 'integer'],
+            [['cardTypeID', 'clubID', 'cost', 'header', 'description', 'vizitingID', 'durationID'], 'required'],
+            [['cardTypeID', 'clubID', 'cost', 'vizitingID', 'durationID'], 'integer'],
             [['header'], 'string', 'max' => 24],
             [['description'], 'string', 'max' => 512]
         ];
@@ -50,6 +50,8 @@ class Cards extends \yii\db\ActiveRecord
             'cost' => 'Цена',
             'header' => 'Название карты',
             'description' => 'Описание',
+            'vizitingID' => 'Время посещения',
+            'durationID' => 'Срок действия карты',
         ];
     }
 
