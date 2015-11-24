@@ -30,23 +30,22 @@ if($fullCost == null) $fullCost = 0;
     $clubs = \app\models\Clubs::find()->count();
     $cards = \app\models\Cards::find()->count();
     $types = \app\models\Types::find()->count();
-    $options = \app\models\Options::find()->count();
-    $variants = \app\models\Variants::find()->count();
     $orders = \app\models\Order::find()->count();
+    $viziting = \app\models\Viziting::find()->count();
+    $duration = \app\models\Duration::find()->count();
   ?>
 
 <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
   <div class="list-group">
     <?php
-    $session = Yii::$app->session;
-    if($session->get('manager') == 2)
+    if(Yii::$app->user->identity->username == "admin")
     {
-    echo('<a href="/city" class="list-group-item">Города (' . $cities . ')</a>
-    <a href="/clubs" class="list-group-item">Клубы (' . $clubs . ')</a>
-    <a href="/cards" class="list-group-item">Карты (' . $cards . ')</a>
-    <a href="/types" class="list-group-item">Типы карт (' . $types . ')</a>
-    <a href="/options" class="list-group-item">Опции (' . $options . ')</a>
-    <a href="/variants" class="list-group-item">Варианты (' . $variants . ')</a>');
+      echo('<a href="/city" class="list-group-item">Города (' . $cities . ')</a>
+      <a href="/clubs" class="list-group-item">Клубы (' . $clubs . ')</a>
+      <a href="/cards" class="list-group-item">Карты (' . $cards . ')</a>
+      <a href="/types" class="list-group-item">Типы карт (' . $types . ')</a>
+      <a href="/types" class="list-group-item">Время посещений (' . $viziting . ')</a>
+      <a href="/types" class="list-group-item">Сроки действия карт (' . $duration . ')</a>');
     }
     ?>
     <a href="/order" class="list-group-item">Заказы (<?=$orders?>)</a>

@@ -34,7 +34,7 @@ class CardsController extends Controller
 
     public function actionIndex()
     {
-        if(Yii::$app->session->get('manager') != 2)
+        if(Yii::$app->user->identity->username != "admin")
             throw new ForbiddenHttpException('Доступ запрещен');
 
         $searchModel = new SearchCards();

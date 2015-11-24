@@ -157,10 +157,10 @@ class SiteController extends Controller
 
     public function actionClubs()
     {
-        if(!Yii::$app->request->isAjax) {
+        if(Yii::$app->request->isAjax) {
             $cityID = Yii::$app->request->get('city');
             if ($clubs = Clubs::find()->where(['cityID' => $cityID])->asArray()->all())
-                return json_encode($clubs,JSON_UNESCAPED_UNICODE);
+                return json_encode($clubs, JSON_UNESCAPED_UNICODE);
             else
                 return 'No clubs in this city.';
         }

@@ -66,9 +66,6 @@ class SiteController extends Controller
         }
         $model = new LoginForm();
         if ($model->load(Yii::$app->request->post()) && $model->login()) {
-            $session = $session = Yii::$app->session;
-            $User = $thisCard = Managers::find()->where(['username' => $model->username])->one();
-            $session['manager'] = $User->usergroup;
             return $this->goBack();
         } else {
             return $this->render('login', [
