@@ -1,8 +1,11 @@
 <?php
 namespace frontend\controllers;
 
+use app\models\Cards;
 use app\models\City;
 use app\models\Clubs;
+use app\models\Duration;
+use app\models\Viziting;
 use Yii;
 use common\models\LoginForm;
 use frontend\models\PasswordResetRequestForm;
@@ -163,6 +166,42 @@ class SiteController extends Controller
                 return json_encode($clubs, JSON_UNESCAPED_UNICODE);
             else
                 return 'No clubs in this city.';
+        }
+        return $this->redirect('index');
+    }
+
+    public function actionCards()
+    {
+        if(Yii::$app->request->isAjax) {
+            $clubID = Yii::$app->request->get('club');
+            if ($cards = Cards::find()->where(['clubID' => $clubID])->asArray()->all())
+                return json_encode($cards, JSON_UNESCAPED_UNICODE);
+            else
+                return 'No cards in this club.';
+        }
+        return $this->redirect('index');
+    }
+
+    public function actionViziting()
+    {
+        if(Yii::$app->request->isAjax) {
+            $vizitingID = Yii::$app->request->get('viziting');
+            if ($vizitings = Viziting::find()->where(['id' => $vizitingID])->asArray()->one())
+                return json_encode($vizitings, JSON_UNESCAPED_UNICODE);
+            else
+                return 'Viziting is not found';
+        }
+        return $this->redirect('index');
+    }
+
+    public function actionDuration()
+    {
+        if(Yii::$app->request->isAjax) {
+            $durationID = Yii::$app->request->get('duration');
+            if ($durations = Duration::find()->where(['id' => $durationID])->asArray()->one())
+                return json_encode($durations, JSON_UNESCAPED_UNICODE);
+            else
+                return 'Duration is not found';
         }
         return $this->redirect('index');
     }
