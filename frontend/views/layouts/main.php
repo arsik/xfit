@@ -55,7 +55,7 @@ AppAsset::register($this);
 				    <span class="city">Ваш город</span> 
 				    <span class="quest-ico">?</span>
 				    <span class="ttip" style="display:none;">Вы находитесь в г.Самара.<br>Вам показывается информация, актуальная для данного региона. Для просмотра клубов в других городах необходимо открыть страницу <a href="/club/">«Клубы»</a> и выбрать соответствующий регион.</span>
-				    <strong>Самара</strong>
+				    <strong id="currentCity">Самара</strong>
 				</span>
                             <ul id="drop-down-menu">
                                 <li><a href="#" id="52">Москва</a></li>
@@ -139,6 +139,10 @@ AppAsset::register($this);
         $('#ttip').on('click', function(e){
             if(!ddm) { $('#drop-down-menu').css('display','block');ddm = true; }
             else { $('#drop-down-menu').css('display','none');ddm = false; }
+        });
+        $('#drop-down-menu li a').on('click', function(e){
+            var city = $(this).text();
+            $('#currentCity').text(city);
         });
     });
 
