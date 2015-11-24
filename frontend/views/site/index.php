@@ -14,8 +14,10 @@ $this->title = 'X-FIT';
                 $count = 1;
                 foreach($city as $cy)
                 {
-                    if($count == 1) echo '<option value="'.$count.'" selected>'.$cy->name.'</option>';
-                    else echo '<option value="'.$count.'">'.$cy->name.'</option>';
+                    if($count == 1) echo '<option data-id="'.$cy->id.'" value="'.$count.'" selected>'.$cy->name.'</option>
+                    ';
+                    else echo '<option data-id="'.$cy->id.'" value="'.$count.'">'.$cy->name.'</option>
+                    ';
                     $count++;
                 }
             ?>

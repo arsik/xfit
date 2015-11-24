@@ -155,6 +155,18 @@ class SiteController extends Controller
             return $this->redirect('index');
     }
 
+    public function actionClubs()
+    {
+        if(Yii::$app->request->isAjax) {
+            $cityID = Yii::$app->request->get('city');
+            if ($clubs = Clubs::find()->where(['cityID' => $cityID])->asArray()->all())
+                return json_encode($clubs);
+            else
+                return 'No clubs in this city.';
+        }
+        return $this->redirect('index');
+    }
+
     /**
      * Signs user up.
      *

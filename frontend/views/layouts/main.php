@@ -51,12 +51,12 @@ AppAsset::register($this);
                             <p>8-800-333-52-52</p>
                         </div>
                         <div id="ttip" class="title">
-				<span>
-				    <span class="city">Ваш город</span> 
-				    <span class="quest-ico">?</span>
-				    <span class="ttip" style="display:none;">Вы находитесь в г.Самара.<br>Вам показывается информация, актуальная для данного региона. Для просмотра клубов в других городах необходимо открыть страницу <a href="/club/">«Клубы»</a> и выбрать соответствующий регион.</span>
-				    <strong id="currentCity">Самара</strong>
-				</span>
+                            <span>
+                                <span class="city">Ваш город</span>
+                                <span class="quest-ico">?</span>
+                                <span class="ttip" style="display:none;">Вы находитесь в г.Самара.<br>Вам показывается информация, актуальная для данного региона. Для просмотра клубов в других городах необходимо открыть страницу <a href="/club/">«Клубы»</a> и выбрать соответствующий регион.</span>
+                                <strong id="currentCity">Самара</strong>
+                            </span>
                             <ul id="drop-down-menu">
                                 <li><a href="#" id="52">Москва</a></li>
                                 <li><a href="#" id="63">Волгоград</a></li>
