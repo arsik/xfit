@@ -664,9 +664,9 @@ a img{
       font-size: 30px;
       line-height: 0.5;
     }
-    .content-xfit .mdl-button {
+    .mdl-button {
       color: #000;
-      background: #ABED68;
+      background: #ABED68 !important;
     }
     .cnt-xfit {
       padding: 0 10px 0px 17px;

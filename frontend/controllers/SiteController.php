@@ -158,6 +158,11 @@ class SiteController extends Controller
             return $this->redirect('index');
     }
 
+    public function actionConfirm()
+    {
+        return $this->render('confirm');
+    }
+
     public function actionClubs()
     {
         if(Yii::$app->request->isAjax) {
