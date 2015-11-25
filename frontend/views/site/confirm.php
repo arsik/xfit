@@ -67,28 +67,28 @@ $this->params['breadcrumbs'][] = $this->title;
         color: #fff;
         padding: 20px 30px;
     }
-    .mdl-textfield {
+    .confirm-content .mdl-textfield {
         width: 100%;
     }
-    .mdl-textfield__input {
+    .confirm-content .mdl-textfield__input {
         border-bottom: 1px solid rgba(255,255,255,.22);
     }
-    .mdl-textfield__label {
+    .confirm-content .mdl-textfield__label {
         color: rgba(255,255,255,.22);
     }
-    .md-input-container:not(.md-input-invalid).md-input-focused .md-input {
+    .confirm-content .md-input-container:not(.md-input-invalid).md-input-focused .md-input {
         border-color: rgba(255,255,255,.90);
     }
-    .mdl-textfield__label::after {
+    .confirm-content .mdl-textfield__label::after {
         background-color: #58ff3b;
     }
-    .mdl-button {
+    .confirm-content .mdl-button {
         float: right;
     }
-    .price {
+    .confirm-content .price {
         font-size: 16px;
     }
-    strong {
+    .confirm-content strong {
         color: #68ff65;
     }
 </style>

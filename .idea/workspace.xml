@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2720f1bb-5031-4f8d-8597-ca700ee3eac1" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/views/site/confirm.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/controllers/SiteController.php" afterPath="$PROJECT_DIR$/frontend/controllers/SiteController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/views/site/order.php" afterPath="$PROJECT_DIR$/frontend/views/site/order.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/web/css/styles.css" afterPath="$PROJECT_DIR$/frontend/web/css/styles.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/views/site/confirm.php" afterPath="$PROJECT_DIR$/frontend/views/site/confirm.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="untitled.iws" />
@@ -103,8 +100,8 @@
       <file leaf-file-name="confirm.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/frontend/views/site/confirm.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.2195572">
-              <caret line="19" column="73" selection-start-line="19" selection-start-column="73" selection-end-line="19" selection-end-column="73" />
+            <state vertical-scroll-proportion="2.1642067">
+              <caret line="69" column="37" selection-start-line="69" selection-start-column="37" selection-end-line="69" selection-end-column="37" />
               <folding />
             </state>
           </provider>
@@ -545,7 +542,13 @@
       <option name="project" value="LOCAL" />
       <updated>1448376428357</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="форма подтверждения заказа">
+      <created>1448447263048</created>
+      <option name="number" value="00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1448447263048</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -554,6 +557,7 @@
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25835866" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32885906" sideWeight="0.49088147" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.0" sideWeight="0.38981763" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -562,7 +566,6 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32885906" sideWeight="0.49088147" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -598,7 +601,8 @@
     <MESSAGE value="добавлено два пункта к картам" />
     <MESSAGE value="ajax json время" />
     <MESSAGE value="ajax json время 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="ajax json время 2" />
+    <MESSAGE value="форма подтверждения заказа" />
+    <option name="LAST_COMMIT_MESSAGE" value="форма подтверждения заказа" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -997,8 +1001,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/frontend/views/site/confirm.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2195572">
-          <caret line="19" column="73" selection-start-line="19" selection-start-column="73" selection-end-line="19" selection-end-column="73" />
+        <state vertical-scroll-proportion="2.1642067">
+          <caret line="69" column="37" selection-start-line="69" selection-start-column="37" selection-end-line="69" selection-end-column="37" />
           <folding />
         </state>
       </provider>
